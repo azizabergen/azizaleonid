@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7f0e4">
+<title>Азиза & Леонид — 10 марта</title>
+<meta name="description" content="Персональное свадебное приглашение Азизы и Леонида. Алматы, 10 марта.">
+
+<!-- Elegant serif + clean sans-serif. The site remains functional if the fonts are unavailable. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --champagne:#efe1c9;
+  --cream:#fbf7ef;
+  --gold:#b28a42;
+  --gold2:#e5cc94;
+  --burgundy:#561a27;
+  --burgundy2:#2b0b11;
+  --ink:#2a201d;
+  --white:#fffdf8;
+  --muted:#84776b;
+  --line:rgba(178,138,66,.55);
+  --shadow:0 25px 80px rgba(41,12,15,.13);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--cream);color:var(--ink);
+  font-family:Montserrat,Arial,sans-serif;font-weight:400;
+  overflow-x:hidden;
+}
+button,input,select,textarea{font:inherit}
+a{text-decoration:none;color:inherit}
+section{scroll-margin-top:70px}
+.screen{
+  min-height:100svh;position:relative;display:flex;align-items:center;
+  justify-content:center;overflow:hidden;padding:90px 7vw;
+}
+.section-inner{width:min(1180px,100%);position:relative;z-index:2}
+.serif{font-family:"Cormorant Garamond",Georgia,serif}
+.eyebrow{
+  font-size:10px;letter-spacing:.38em;text-transform:uppercase;
+  color:var(--gold);font-weight:600;margin-bottom:18px
+}
+h1,h2,h3,p{margin-top:0}
+h2{
+  font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;
+  font-size:clamp(48px,7vw,96px);line-height:.9;margin-bottom:24px;
+}
+.section-title{font-size:clamp(45px,6vw,78px)}
+.lead{font-size:14px;line-height:2;max-width:680px;color:#665558}
+.gold-line{width:100px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:24px 0}
+.frame{border:1px solid var(--line);padding:8px;position:relative}
+.frame:before,.frame:after{
+  content:"";position:absolute;width:34px;height:34px;border-color:var(--gold);
+  border-style:solid;pointer-events:none
+}
+.frame:before{left:-1px;top:-1px;border-width:1px 0 0 1px}
+.frame:after{right:-1px;bottom:-1px;border-width:0 1px 1px 0}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  border:1px solid var(--gold);color:var(--gold);background:transparent;
+  padding:15px 28px;min-height:50px;letter-spacing:.15em;
+  font-size:10px;text-transform:uppercase;cursor:pointer;transition:.35s;
+  position:relative;overflow:hidden
+}
+.btn:before{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.55),transparent 70%);
+  transform:translateX(-130%);transition:.7s
+}
+.btn:hover:before{transform:translateX(130%)}
+.btn:hover{background:rgba(200,164,91,.09);box-shadow:0 0 24px rgba(200,164,91,.2)}
+.btn span{position:relative;z-index:1}
+.gold{color:var(--gold)}
+.decor{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.ornament{
+  position:absolute;border:1px solid rgba(200,164,91,.18);
+  width:42vw;height:42vw;border-radius:50%;transform:rotate(22deg)
+}
+.ornament.o1{left:-25vw;top:-20vw}.ornament.o2{right:-25vw;bottom:-20vw}
+.corner{position:absolute;width:110px;height:110px;border-color:var(--gold);border-style:solid;opacity:.65}
+.c1{top:34px;left:34px;border-width:1px 0 0 1px}.c2{top:34px;right:34px;border-width:1px 1px 0 0}
+.c3{bottom:34px;left:34px;border-width:0 0 1px 1px}.c4{bottom:34px;right:34px;border-width:0 1px 1px 0}
+
+/* COVER */
+.cover{background:radial-gradient(ellipse at 50% 38%,#fffdf7 0%,#f4ead8 53%,#e7d4b2 100%);color:var(--ink)}
+.cover:before{content:"";position:absolute;inset:20px;border:1px solid rgba(178,138,66,.68);pointer-events:none}
+.cover:after{content:"";position:absolute;inset:30px;border:1px solid rgba(178,138,66,.24);pointer-events:none}
+.cover .section-inner{text-align:center;color:var(--ink);max-width:1220px}
+.cover-layout{display:grid;grid-template-columns:.88fr 1.12fr;gap:5vw;align-items:center;text-align:left!important}
+.cover-copy{text-align:center;position:relative;z-index:2}
+.cover .seal{background:#fff9eeaa;box-shadow:0 0 0 7px #d8bb7a22,0 12px 45px #60421b18}
+.cover .eyebrow{color:#96702f}
+.cover-title{font-family:"Great Vibes","Cormorant Garamond",serif;color:#6c2632;text-shadow:0 4px 25px #b28a4225;font-size:clamp(74px,9vw,132px);font-weight:400;line-height:.83;letter-spacing:0}
+.cover-date{color:#71562e}
+.cover-note{color:#67564b}
+.cover .btn{color:#6c2632;border-color:var(--gold)}
+.cover .scroll-cue{color:#6d5c47}
+.cover-photos{display:grid;grid-template-columns:1fr .78fr;grid-template-rows:250px 250px;gap:15px;align-items:stretch;position:relative;padding:16px}
+.cover-photos:before{content:"";position:absolute;inset:0;border:1px solid var(--gold);outline:1px solid #b28a4233;outline-offset:7px}
+.cover-photos img{width:100%;height:100%;object-fit:cover;border:7px solid #fffaf0;box-shadow:0 15px 38px #49341c2b;filter:saturate(.82)}
+.cover-photos img:first-child{grid-row:span 2}
+.cover-photos img:nth-child(2){object-position:center 35%}
+.cover-photos img:nth-child(3){object-position:center 45%}
+.cover .eyebrow{color:var(--gold2)}
+.cover-title{
+  font-size:clamp(72px,13vw,170px);line-height:.78;font-weight:500;
+  letter-spacing:-.04em;margin:10px 0 30px;animation:rise 1.4s both
+}
+.cover-date{font-size:13px;letter-spacing:.48em;text-transform:uppercase;color:#eadbbd}
+.cover-note{max-width:540px;margin:30px auto 36px;color:#eadfda;line-height:1.9;font-size:13px}
+.seal{
+  width:82px;height:82px;border:1px solid var(--gold);border-radius:50%;
+  display:grid;place-items:center;margin:0 auto 35px;color:var(--gold2);
+  font-family:"Cormorant Garamond";font-size:25px
+}
+.scroll-cue{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);font-size:9px;letter-spacing:.3em;color:rgba(255,255,255,.5);text-transform:uppercase}
+
+/* LOVE */
+.love{background:var(--cream)}
+.love-grid{display:grid;grid-template-columns:1fr 1fr;gap:7vw;align-items:center}
+.couple-photo{aspect-ratio:4/5;overflow:hidden;box-shadow:var(--shadow)}
+.couple-photo img{width:100%;height:100%;object-fit:cover}
+.quote{font-family:"Cormorant Garamond";font-size:clamp(25px,3vw,38px);line-height:1.25;color:var(--burgundy);max-width:560px}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:35px;max-width:620px}
+.count-item{border-top:1px solid var(--line);padding-top:13px}
+.count-num{font-family:"Cormorant Garamond";font-size:42px;color:var(--burgundy)}
+.count-label{font-size:8px;letter-spacing:.2em;color:var(--muted);text-transform:uppercase}
+.calendar{margin-top:30px;padding:22px;border:1px solid var(--line);max-width:360px}
+.cal-head{display:flex;justify-content:space-between;align-items:center;color:var(--gold);font-family:"Cormorant Garamond";font-size:24px}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:7px;margin-top:16px;text-align:center;font-size:10px}
+.cal-grid b{font-weight:500;color:var(--muted)}
+.cal-grid .day{padding:7px 0}
+.cal-grid .selected{background:var(--burgundy);color:white;border-radius:50%}
+
+/* CHURCH */
+.church{background:linear-gradient(#fffdf9,#f5efe4);text-align:center}
+.church .section-inner{max-width:900px}
+.church-icon{font-size:54px;color:var(--gold);font-family:"Cormorant Garamond";margin-bottom:10px}
+.church-name{font-family:"Cormorant Garamond";font-size:42px;color:var(--burgundy);margin:18px 0}
+.church-info{display:flex;justify-content:center;gap:50px;margin:35px 0;flex-wrap:wrap}
+.info-block{min-width:150px}.info-label{font-size:9px;letter-spacing:.25em;color:var(--gold);text-transform:uppercase}.info-value{font-family:"Cormorant Garamond";font-size:27px;margin-top:7px}
+.cross{width:50px;height:70px;margin:0 auto;position:relative}
+.cross:before,.cross:after{content:"";position:absolute;background:var(--gold)}
+.cross:before{width:2px;height:70px;left:24px}.cross:after{width:42px;height:2px;top:19px;left:4px}
+
+/* BANQUET */
+.banquet{background:var(--burgundy2);color:var(--white)}
+.banquet .lead{color:#d6c7c5}
+.banquet-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+.restaurant-photo{height:570px;overflow:hidden}.restaurant-photo img{width:100%;height:100%;object-fit:cover;filter:saturate(.75)}
+.place-card{border:1px solid var(--line);padding:44px;position:relative;background:rgba(255,255,255,.025)}
+.place-card .info-value{color:var(--white)}
+.editable{color:var(--gold2);font-family:"Cormorant Garamond";font-size:32px}
+
+/* DRESS */
+.traditions-kz{background:linear-gradient(135deg,#26080c,#4a1119 58%,#310b11);color:var(--white);text-align:center}
+.traditions-kz .section-inner{max-width:1000px}
+.traditions-kz .eyebrow{color:var(--gold2)}
+.traditions-kz .lead{color:#e5d6d3;margin:0 auto;max-width:700px}
+.kz-customs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:45px 0 30px;text-align:left}
+.kz-customs article{border:1px solid var(--line);padding:27px 25px;background:rgba(255,255,255,.025)}
+.kz-customs article>span{font:400 12px "Cormorant Garamond";color:var(--gold2)}
+.kz-customs h3{font:500 34px "Cormorant Garamond";color:var(--gold2);margin:18px 0 8px}
+.kz-customs p,.kz-gift-note{font-size:11px;line-height:1.9;color:#e5d6d3}
+.kz-gift-note{max-width:790px;margin:28px auto 0;padding:20px 25px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:12px}
+.dress{background:var(--champagne)}
+.palette{display:flex;gap:14px;margin:30px 0;flex-wrap:wrap}
+.swatch{width:110px;height:80px;border:1px solid rgba(0,0,0,.08);display:flex;align-items:end;padding:8px;font-size:8px;letter-spacing:.1em;text-transform:uppercase}
+textarea,input,select{
+  width:100%;background:transparent;border:0;border-bottom:1px solid var(--line);
+  padding:14px 4px;outline:0;color:var(--ink);font-size:12px;margin-bottom:20px
+}
+textarea{min-height:120px;resize:vertical}
+input:focus,textarea:focus,select:focus{border-color:var(--gold)}
+::placeholder{color:#a99996}
+
+/* RSVP */
+.rsvp{background:linear-gradient(135deg,#f7eddd,#fffaf2)}
+.rsvp-card{max-width:800px;margin:auto;border:1px solid var(--line);padding:clamp(28px,6vw,65px);background:rgba(255,255,255,.5);box-shadow:var(--shadow)}
+.rsvp-title{text-align:center}.rsvp-text{text-align:center;max-width:650px;margin:0 auto 35px;line-height:1.9;font-size:13px;color:#665558}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 30px}.full{grid-column:1/-1}
+.success{display:none;text-align:center;padding:50px 20px}.success.show{display:block}.success h3{font-family:"Cormorant Garamond";font-size:45px;color:var(--burgundy);font-weight:500}
+
+/* NAV / MUSIC */
+.topnav{
+  position:fixed;z-index:900;top:0;left:0;right:0;height:62px;
+  display:flex;justify-content:center;align-items:center;gap:22px;
+  background:linear-gradient(rgba(18,5,7,.72),transparent);color:white;
+  transition:.3s
+}
+.topnav a{font-size:8px;letter-spacing:.17em;text-transform:uppercase;color:rgba(255,255,255,.7);transition:.25s}
+.topnav a:hover{color:var(--gold2)}
+.music{
+  position:fixed;right:22px;bottom:22px;z-index:950;width:48px;height:48px;border-radius:50%;
+  border:1px solid var(--gold);background:rgba(29,11,14,.92);color:var(--gold2);
+  cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.25)
+}
+.music.playing{animation:spin 4s linear infinite}
+.progress{position:fixed;top:0;left:0;height:2px;background:var(--gold);z-index:1001;width:0}
+.reveal{opacity:0;transform:translateY(30px);transition:1s ease}.reveal.visible{opacity:1;transform:none}
+footer{padding:45px;text-align:center;background:var(--burgundy2);color:#bda9a6;font-size:9px;letter-spacing:.15em;text-transform:uppercase}
+
+/* Responsive */
+@media(max-width:850px){
+  .topnav{overflow:auto;justify-content:flex-start;padding:0 18px;gap:18px}
+  .screen{padding:80px 6vw}
+  .love-grid,.banquet-grid{grid-template-columns:1fr;gap:40px}
+  .couple-photo{aspect-ratio:1/1}
+  .restaurant-photo{height:430px}
+  .form-grid{grid-template-columns:1fr}.full{grid-column:auto}
+  .kz-customs{grid-template-columns:1fr;gap:10px}.kz-customs article{padding:19px 22px}.kz-customs h3{margin:8px 0}
+}
+@media(max-width:520px){
+  .cover-title{font-size:72px}.corner{width:65px;height:65px}
+  .countdown{gap:6px}.count-num{font-size:32px}
+  .calendar{margin-left:auto;margin-right:auto}
+  .church-name{font-size:34px}.church-info{gap:25px}
+  .place-card{padding:28px}
+  .rsvp-card{padding:25px 18px}
+}
+@keyframes rise{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* Refined golden invitation finish */
+.cover{min-height:100svh;padding-top:115px;padding-bottom:75px}
+.cover .section-inner.cover-layout{width:min(1190px,100%);grid-template-columns:.86fr 1.14fr;gap:clamp(30px,5vw,78px);text-align:initial;color:var(--ink)}
+.cover-copy{text-align:center}
+.cover .eyebrow{color:#866329;font-size:9px;letter-spacing:.32em}
+.cover-title{font-family:"Great Vibes","Cormorant Garamond",serif;font-size:clamp(78px,9vw,132px);line-height:.82;color:#702c38;letter-spacing:0;margin:12px 0 24px;text-shadow:0 4px 28px #aa843622}
+.cover-date{font-size:10px;letter-spacing:.3em;color:#715a39}
+.cover-note{max-width:390px;font:400 19px/1.45 "Cormorant Garamond",serif;color:#695849;margin:24px auto 26px}
+.cover .seal{width:64px;height:64px;margin:0 auto 23px;color:#9b783f;border-color:#b28a42;font-size:22px}
+.cover-photos{grid-template-rows:clamp(220px,27vw,330px) clamp(170px,19vw,230px);gap:14px;padding:17px}
+.cover-photos img{border-width:6px}
+.cover-photos:before{inset:0;border-color:#b28a42;outline-color:#b28a4255}
+.cover:before{inset:18px;border-color:#b28a42a6}
+.cover:after{inset:28px;border-color:#b28a4240}
+.cover .scroll-cue{color:#816b4e;letter-spacing:.22em}
+.love{background:radial-gradient(ellipse at center,#fffdf9 0,#f8f0e3 78%)}
+.love-grid{display:block;max-width:900px;text-align:center}
+.love-copy{max-width:820px;margin:auto}
+.love-copy .quote{margin:25px auto 12px}
+.love-copy .gold-line{margin:25px auto}
+.love-copy .countdown{margin:36px auto 0}
+.love-copy .calendar{margin:30px auto 0;background:#fffdf9d9;box-shadow:0 12px 38px #7f5c2310}
+.church{background:linear-gradient(135deg,#fffefa,#f7efdf);isolation:isolate;padding-top:120px;padding-bottom:120px}
+.church:before{content:"";position:absolute;z-index:-1;width:min(520px,75vw);height:570px;left:50%;top:50%;transform:translate(-50%,-48%);border:1px solid #b28a4240;border-radius:50% 50% 0 0}
+.church:after{content:"";position:absolute;z-index:-1;width:min(450px,65vw);height:535px;left:50%;top:50%;transform:translate(-50%,-48%);border:1px solid #b28a4225;border-radius:50% 50% 0 0}
+.church .section-inner{padding:40px 26px;border:1px solid #b28a4240;background:#fffdf8aa;box-shadow:0 22px 60px #60451b0c}
+.church .section-inner:before,.church .section-inner:after{content:"";position:absolute;top:30px;bottom:30px;width:1px;background:linear-gradient(transparent,#b28a4270,transparent)}
+.church .section-inner:before{left:18px}.church .section-inner:after{right:18px}
+.church .cross{margin-bottom:13px}
+.chapel-flourish{font-size:18px;letter-spacing:.2em;color:#b28a42;margin:0 auto 16px}
+.chapel-bottom{margin:22px auto 4px}
+.church-name{font-size:46px}
+.banquet{background:linear-gradient(135deg,#f3e7d2,#fffaf1 52%,#ead9b9);color:var(--ink)}
+.banquet .lead{color:#62534a}
+.banquet-grid{grid-template-columns:1.12fr .88fr;gap:clamp(35px,6vw,85px)}
+.restaurant-photo{height:min(72svh,680px);min-height:460px;box-shadow:0 28px 70px #32231b2b}
+.restaurant-photo img{filter:sepia(.08) saturate(.78);object-position:center}
+.place-card{background:#fffaf0b9;border-color:#b28a4280;box-shadow:0 14px 44px #4a321408}
+.place-card .info-value{color:var(--burgundy)}
+.editable{color:var(--burgundy);font-size:39px;line-height:1.1}
+.venue-address{font:400 20px/1.4 "Cormorant Garamond",serif;color:#49382e;margin-top:7px}
+.venue-map{margin-top:20px;color:var(--burgundy)}
+.traditions-kz{background:radial-gradient(ellipse at center,#652531 0,#46121d 68%,#2b0b11 100%);isolation:isolate}
+.traditions-kz:before,.traditions-kz:after{content:"❧";position:absolute;z-index:-1;color:#d3ad6540;font:300 clamp(150px,25vw,350px)/1 "Cormorant Garamond",serif;top:50%;transform:translateY(-50%)}
+.traditions-kz:before{left:-.05em}.traditions-kz:after{right:-.05em;transform:translateY(-50%) scaleX(-1)}
+.traditions-kz .section-inner{padding:45px 38px;border:1px solid #d4ad6466;outline:1px solid #d4ad6428;outline-offset:8px}
+.traditions-kz .eyebrow{color:#e5ca8b}
+.traditions-kz .lead{font:400 19px/1.55 "Cormorant Garamond",serif;color:#f0e3d1}
+.kazakh-flourish{width:min(250px,60%);margin:22px auto 3px;color:#dfbd78;filter:drop-shadow(0 0 8px #dfbd7833)}
+.kazakh-flourish svg{width:100%;height:auto;fill:none;stroke:currentColor;stroke-width:1.35;stroke-linecap:round;stroke-linejoin:round}
+.kz-customs article{border-color:#d4ad6455;background:#fffaf108;box-shadow:inset 0 0 35px #e2c88008}
+.kz-customs article>span{color:#e5ca8b;letter-spacing:.18em}
+.kz-customs h3{font-size:31px;color:#f1dfb7}
+.kz-customs p,.kz-gift-note{font-size:12px;color:#f0e3d1}
+.kz-gift-note{border-color:#d4ad6480}
+.dress{background:linear-gradient(145deg,#f5ead7,#fffaf2 50%,#eee0c7);text-align:center}
+.dress .section-inner{max-width:1050px}
+.dress .lead{margin:0 auto;max-width:720px}
+.palette{justify-content:center;gap:10px;margin:35px auto 42px}
+.swatch{width:clamp(92px,11vw,130px);height:92px;align-items:end;justify-content:center;padding:12px 5px;font-size:8px;letter-spacing:.12em;color:#43382d;box-shadow:0 8px 20px #4b32110d}
+.swatch.black{background:#171415;color:#fff}.swatch.champ{background:#e6d3b4}.swatch.brown{background:#72513d;color:#fff}.swatch.ivory{background:#e9dfcc}.swatch.silver{background:linear-gradient(135deg,#bfc0c1,#f1f0ed,#a6a8aa)}.swatch.burg{background:#5a1726;color:#fff}.swatch.red{background:#9e2634;color:#fff}
+.dress-guidance{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;text-align:left}
+.dress-guidance article{padding:23px 24px;border:1px solid #b28a4266;background:#fffaf399}
+.dress-guidance span{font:500 25px "Cormorant Garamond",serif;color:var(--burgundy)}
+.dress-guidance p{font-size:11px;line-height:1.8;color:#706156;margin:9px 0 0}
+.rsvp{background:radial-gradient(ellipse at center,#fffdf8,#efe0c6)}
+.rsvp-card{border-color:#ad8240;background:#fffaf1e8;box-shadow:0 28px 90px #3b1b171b;position:relative}
+.rsvp-card:before{content:"";position:absolute;inset:10px;border:1px solid #b28a423f;pointer-events:none}
+.form-grid{grid-template-columns:1fr;max-width:530px;margin:auto}
+.rsvp-text{font:400 19px/1.55 "Cormorant Garamond",serif}
+.topnav{background:#fbf7efed;border-bottom:1px solid #b28a4240;backdrop-filter:blur(12px);box-shadow:0 4px 26px #4a32100a}
+.topnav a{color:#5a4232;font-size:8px;letter-spacing:.13em}
+.topnav a:hover{color:#a27a36}
+.music{background:#4a1420;border-color:#d2ad68;color:#f1d9a3}
+.progress{background:linear-gradient(90deg,#9c712c,#e6cd91,#9c712c)}
+.btn{color:var(--burgundy);border-color:#a77f39;background:#fffaf125}
+.btn:hover{background:#b28a4210;box-shadow:0 0 30px #b28a4233}
+footer{background:#2b0b11;color:#e5d5b6;border-top:1px solid #c7a15470}
+/* Cathedral atmosphere and richly embroidered Kazakh color */
+.church{background:#21150f;isolation:isolate;color:#fffdf8}
+.church:before{z-index:-2;inset:0;width:100%;height:100%;left:0;top:0;transform:none;border:0;border-radius:0;background:linear-gradient(90deg,rgba(22,14,11,.74),rgba(22,14,11,.24) 50%,rgba(22,14,11,.72)),linear-gradient(0deg,rgba(22,14,11,.7),rgba(22,14,11,.04) 65%),url('https://images.unsplash.com/photo-1629470385305-a8437fd9c557?auto=format&fit=crop&w=2200&q=85') center 48%/cover no-repeat}
+.church:after{z-index:-1;width:min(580px,88vw);height:88%;border:1px solid #e5cc9470;border-radius:48% 48% 0 0;box-shadow:inset 0 0 0 8px #e5cc9414;top:50%;left:50%;transform:translate(-50%,-50%)}
+.church .section-inner{color:#fffdf8;background:rgba(30,19,15,.38);border-color:#ead7ae99;box-shadow:0 24px 90px #10080644;backdrop-filter:blur(2px)}
+.church .section-inner:before,.church .section-inner:after{background:linear-gradient(transparent,#ead7aeaa,transparent)}
+.church .eyebrow,.church .info-label{color:#f0d99f}.church .lead{color:#f7eee0}
+.church-name,.church .info-value{color:#fff9eb;text-shadow:0 2px 18px #160c08}.church .btn{color:#f3dba1;border-color:#e5cc94}
+.church-icon{color:#f2dba0}.cross:before,.cross:after{background:#f0d99f;box-shadow:0 0 15px #e5cc9477}
+.church-aisle{position:absolute;z-index:-1;bottom:-15%;left:50%;width:min(430px,70vw);height:56%;transform:translateX(-50%);background:linear-gradient(90deg,transparent,#fff8e726 47%,#fff8e726 53%,transparent);clip-path:polygon(43% 0,57% 0,100% 100%,0 100%);filter:drop-shadow(0 0 22px #f3dba044)}
+.church-pews{position:absolute;z-index:-1;bottom:14%;left:7%;right:7%;height:20%;opacity:.58;background:repeating-linear-gradient(0deg,transparent 0 13px,#d8b97799 14px 17px,transparent 18px 28px);mask-image:linear-gradient(90deg,#000,transparent 44%,transparent 56%,#000)}
+.church-pews:before{content:"";position:absolute;left:0;right:0;top:-22%;height:6px;background:#c89d51;box-shadow:0 24px #c89d51,0 48px #c89d51,0 72px #c89d51}
+.traditions-kz{background:radial-gradient(ellipse at center,#8a202a 0,#54111b 60%,#21070d 100%);isolation:isolate}
+.traditions-kz:before,.traditions-kz:after{content:"❋";position:absolute;z-index:-1;color:#dc293550;font:300 clamp(210px,34vw,490px)/1 "Cormorant Garamond",serif;top:50%;transform:translateY(-50%);text-shadow:0 0 35px #e8c47729}
+.traditions-kz:before{left:-.16em}.traditions-kz:after{right:-.16em;transform:translateY(-50%) scaleX(-1)}
+.traditions-kz .section-inner:before{content:"";position:absolute;inset:10px;border:1px solid #dc293566;pointer-events:none;box-shadow:inset 0 0 0 8px #dc293512}
+.kz-landscape{display:grid;grid-template-columns:1.4fr .8fr;gap:18px;margin:34px auto 24px;max-width:880px;height:260px;text-align:left}
+.kz-landscape figure{margin:0;position:relative;overflow:hidden;border:1px solid #e5cc9480;box-shadow:0 18px 50px #16050960}
+.kz-landscape img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.86)}
+.kz-landscape figure:first-child img{object-position:center 58%}.kz-landscape figure:nth-child(2) img{object-position:center 22%}
+.kz-landscape figcaption{position:absolute;bottom:0;left:0;right:0;padding:24px 14px 12px;background:linear-gradient(transparent,#18090bd9);color:#fff5e4;font:400 15px "Cormorant Garamond",serif}
+.kz-photo-credit{font-size:8px;color:#e5d6d3;opacity:.8}
+.banquet-story{margin-top:24px;padding-top:20px;border-top:1px solid #b28a4266;color:#56453c;font:400 17px/1.55 "Cormorant Garamond",serif}
+.banquet-story strong{color:var(--burgundy);font-weight:600}
+.gift-showcase{margin-top:25px;display:grid;grid-template-columns:repeat(4,1fr);gap:9px}
+.gift{padding:14px 8px 12px;text-align:center;border:1px solid #b28a4266;background:linear-gradient(145deg,#fffaf0,#ead9b9);color:#72522c;font:500 9px/1.45 Montserrat,sans-serif;letter-spacing:.04em;box-shadow:0 8px 22px #3c24100c}
+.gift-icon{display:block;font-size:28px;line-height:1.2;margin-bottom:7px;filter:drop-shadow(0 2px 4px #b28a4244)}
+.gift-bounty{display:grid;grid-template-columns:145px 1fr;gap:14px;align-items:center;margin-top:20px;padding:10px;border:1px solid #d9b96e;background:linear-gradient(145deg,#fff9eb,#e7d4ac);color:#6a4b25}
+.gift-bounty img{width:100%;height:120px;object-fit:cover;object-position:center 60%;border:1px solid #b28a42}
+.gift-bounty p{margin:0;font:400 17px/1.4 "Cormorant Garamond",serif}
+.gift-bounty strong{display:block;color:#651729;font-size:22px;font-weight:600;margin-bottom:4px}
+.dress-guidance{grid-template-columns:repeat(2,1fr)}
+.swatch.burg{background:#681426;color:#fff}.swatch.red{background:#ad1f31;color:#fff}
+@media(max-width:700px){.kz-landscape{grid-template-columns:1fr 1fr;height:190px;gap:9px}.gift-showcase{grid-template-columns:repeat(2,1fr)}.church-pews{left:1%;right:1%}}
+/* Burgundy invitation opener, inspired by a sealed wedding letter */
+.cover{background:linear-gradient(135deg,rgba(39,5,13,.85),rgba(71,10,24,.78)),url("assets/kazakh-carpet-frame.jpg") center/cover no-repeat;color:#fff7e8}
+.cover .section-inner.cover-layout{color:#fff7e8}
+.cover-copy{padding:clamp(24px,4vw,48px);border:1px solid #d4ad6470;background:linear-gradient(145deg,#3b0915dc,#27060ed9);box-shadow:inset 0 0 0 8px #d4ad6410,0 24px 80px #10030755}
+.cover .eyebrow{color:#ecd18f}.cover-title{color:#f0d899;text-shadow:0 5px 25px #e6c78055}
+.cover-date{color:#f1dcae}.cover-note{color:#f4e9d8}.cover .btn{color:#f3d99c;border-color:#dec078}
+.cover .seal{color:#f2d895;border-color:#e0c17b;background:#4a0e1b;box-shadow:0 0 0 7px #d8bb7a22,0 12px 45px #16050b88}
+.cover-photos{grid-template-columns:1fr .78fr;grid-template-rows:250px 250px}
+.cover-photos:before{border-color:#e3c47f;outline-color:#d9ba6a66}
+.cover-photos img{border-color:#fff5e4;filter:saturate(.9)}
+.cover .scroll-cue{color:#f1dcae}
+.opener{position:fixed;z-index:2000;inset:0;display:grid;place-items:center;padding:28px;background:linear-gradient(135deg,rgba(30,3,10,.94),rgba(79,11,28,.94)),url("assets/kazakh-carpet-frame.jpg") center/cover;color:#f6e6c2;transition:opacity .8s,visibility .8s}
+.opener:before{content:"";position:absolute;inset:17px;border:1px solid #dfc17a;box-shadow:inset 0 0 0 7px #dfc17a18;pointer-events:none}
+.opener:after{content:"";position:absolute;inset:27px;border:1px solid #dfc17a55;pointer-events:none}
+.opener-content{position:relative;z-index:1;text-align:center;width:min(600px,100%)}
+.opener-kicker{font-size:9px;letter-spacing:.36em;text-transform:uppercase;color:#e9cf91;margin-bottom:36px}
+.envelope-stage{position:relative;width:min(430px,82vw);height:300px;margin:0 auto 28px;perspective:1200px}
+.envelope-back{position:absolute;inset:45px 0 0;background:linear-gradient(145deg,#68182a,#3b0915);border:1px solid #d7b66a;box-shadow:0 30px 75px #10030799}
+.invitation-letter{position:absolute;z-index:1;left:7%;right:7%;top:4px;height:230px;padding:32px 20px 25px;background:linear-gradient(145deg,#fff9ec,#e9d8b9);border:1px solid #b89450;color:#5a1826;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;transition:transform .9s cubic-bezier(.2,.75,.25,1),opacity .6s}
+.invitation-letter:before{content:"";position:absolute;inset:7px;border:1px solid #b8945077}
+.invitation-letter small{font-size:8px;letter-spacing:.3em;text-transform:uppercase;color:#8b6a35}
+.invitation-letter strong{font:500 40px/.9 "Cormorant Garamond",serif;text-align:center}
+.invitation-letter span{font:400 9px Montserrat,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#806336}
+.envelope-front{position:absolute;z-index:2;inset:45px 0 0;background:linear-gradient(145deg,#6b192b,#400a16);clip-path:polygon(0 0,50% 54%,100% 0,100% 100%,0 100%);border:1px solid #d7b66a}
+.envelope-flap{position:absolute;z-index:3;left:0;right:0;top:45px;height:160px;background:linear-gradient(140deg,#7d2131,#4a0e1b);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:50% 0;transition:transform .8s ease;filter:drop-shadow(0 6px 8px #21050c66)}
+.open-envelope{position:relative;z-index:4;display:flex;flex-direction:column;align-items:center;gap:10px;margin:-118px auto 0;background:none;border:0;color:#f5e4bf;cursor:pointer;text-transform:uppercase;font:500 9px Montserrat,sans-serif;letter-spacing:.2em}
+.wax-seal{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#f1db9d,#b68a3f 58%,#79501e);border:1px solid #f5dfaa;box-shadow:0 3px 12px #23050b88,inset 0 0 0 4px #6d3e2355;color:#4d101a;font:500 21px "Cormorant Garamond",serif}
+.opener.opening .envelope-flap{transform:rotateX(180deg)}.opener.opening .invitation-letter{transform:translateY(-70px);opacity:.98}
+.opener.opening{opacity:0;visibility:hidden;pointer-events:none}
+.opener-ornament{font:400 18px "Cormorant Garamond",serif;color:#d2a95c;letter-spacing:.6em;margin-top:26px}
+.banquet{background:radial-gradient(ellipse at center,#4a1020,#26070e 78%);color:#fff6e5}
+.banquet .lead{color:#eadbc3}.banquet .eyebrow{color:#e6c981}
+.restaurant-photo{border:1px solid #d2a95c;outline:1px solid #d2a95c44;outline-offset:7px;box-shadow:0 28px 80px #10030788}
+.restaurant-photo img{filter:saturate(.86);object-position:center}
+.place-card{background:linear-gradient(145deg,#3a0c17ed,#26070edf);border-color:#d2a95c;box-shadow:inset 0 0 0 7px #d2a95c12,0 20px 70px #12030955;color:#fff6e5}
+.place-card .info-label{color:#e4c77f}.place-card .info-value{color:#fff4dc}.place-card .editable{font:500 clamp(42px,6vw,68px)/.94 "Cormorant Garamond",serif;color:#f3d99b;text-shadow:0 0 25px #e8c56a33;margin:8px 0}
+.venue-subtitle{font:400 18px "Cormorant Garamond",serif;color:#e9d4a4;letter-spacing:.08em;margin:7px 0 20px}
+.venue-address{color:#f5ead7}.banquet-story{color:#eee0ca;border-color:#d2a95c88}.banquet-story strong{color:#f1d893}
+.gift{background:linear-gradient(145deg,#fff9eb,#e7d4ac);border-color:#d9b96e}
+.traditions-kz{background:linear-gradient(135deg,rgba(39,5,14,.86),rgba(77,10,25,.88)),url("assets/kazakh-carpet-frame.jpg") center/cover fixed;color:#fff6e6}
+.traditions-kz:before,.traditions-kz:after{content:none}
+.traditions-kz .section-inner{border-color:#e0bd72;background:rgba(44,5,15,.72);box-shadow:inset 0 0 0 8px #d2a95c12,0 22px 80px #18040b77}
+.kz-landscape{display:none}
+.kz-customs{grid-template-columns:repeat(3,1fr);gap:14px}
+.kz-customs article{padding:0 0 20px;overflow:hidden;border-color:#d8b86d8c;background:linear-gradient(155deg,#5b1022ee,#320712f2);box-shadow:0 16px 40px #17030b77}
+.ritual-photo{display:block;width:100%;height:clamp(150px,20vw,230px);object-fit:cover;object-position:center 34%;border-bottom:1px solid #d7b66a;filter:saturate(.88)}
+.kz-customs article:nth-child(2) .ritual-photo{object-position:center 20%}
+.kz-customs article>span,.kz-customs h3,.kz-customs p{margin-left:20px;margin-right:20px}
+.kz-customs article>span{display:block;margin-top:18px;color:#ecd18f}
+.kz-customs h3{margin-top:11px;color:#fff0d0}
+.kz-customs p{color:#ebddca}
+.kz-gift-note{color:#f1e4cf;border-color:#d6b567}
+@media(max-width:850px){.cover-photos{grid-template-rows:clamp(180px,38vw,260px) clamp(130px,27vw,190px)}}
+@media(max-width:700px){.opener{padding:22px}.envelope-stage{height:255px}.invitation-letter{height:200px}.envelope-flap{height:135px}.open-envelope{margin-top:-98px}.kz-customs{grid-template-columns:1fr 1fr}.ritual-photo{height:180px}.traditions-kz{background-attachment:scroll}}
+@media(max-width:520px){.cover-copy{padding:25px 18px}.cover-photos{grid-template-rows:190px 130px}.kz-customs{grid-template-columns:1fr}.ritual-photo{height:210px}.opener-kicker{margin-bottom:20px}.envelope-stage{height:230px}.invitation-letter{height:180px}.envelope-back,.envelope-front{top:35px}.envelope-flap{top:35px;height:120px}.open-envelope{margin-top:-90px}}
+@media(max-width:850px){.cover .section-inner.cover-layout{grid-template-columns:1fr;gap:34px}.cover-photos{max-width:650px;width:100%;margin:auto;grid-template-rows:clamp(180px,38vw,260px) clamp(130px,27vw,190px)}.banquet-grid{grid-template-columns:1fr}.restaurant-photo{height:55vw;min-height:340px;max-height:500px}.dress-guidance{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.cover{padding-top:100px;min-height:100svh}.cover .section-inner.cover-layout{gap:25px}.cover-title{font-size:78px}.cover-photos{grid-template-rows:190px 130px;gap:8px;padding:10px}.cover-photos img{border-width:4px}.cover .cover-note{font-size:17px;margin:19px auto}.cover .seal{margin-bottom:16px}.church .section-inner{padding:28px 20px}.church-name{font-size:37px}.restaurant-photo{min-height:270px;height:72vw}.place-card{padding:28px 22px}.kz-customs{grid-template-columns:1fr}.traditions-kz .section-inner{padding:30px 20px}.kz-customs article{padding:17px 20px}.dress-guidance{grid-template-columns:1fr}.swatch{height:76px;width:calc(25% - 8px);font-size:7px}.rsvp-card{padding:35px 22px}.topnav{gap:14px}.topnav a{font-size:7px}}
+/* Final burgundy and gold refinement */
+.cover-title{font-family:"Bodoni Moda","Cormorant Garamond",Georgia,serif;font-weight:500;font-style:normal;letter-spacing:-.045em;color:#f4dda1;text-shadow:0 5px 32px #e9c56b66}
+.cover-photos{grid-template-columns:1fr 1fr;grid-template-rows:clamp(270px,38vw,480px);gap:16px}
+.cover-photos img:first-child{grid-row:auto;object-position:center 38%}
+.cover-photos img:nth-child(2){object-position:center 45%}
+.countdown{padding:20px 18px;border:1px solid #a77938;background:linear-gradient(145deg,#5b1422,#350911);box-shadow:inset 0 0 0 6px #d2a95c12,0 15px 40px #39111b16}
+.count-item{border-top-color:#c59a50}
+.count-num{color:#f0d58f}.count-label{color:#ead9b7}
+.calendar{border-color:#b9904b;background:linear-gradient(145deg,#5b1422,#350911)!important;box-shadow:inset 0 0 0 6px #d2a95c12,0 15px 40px #39111b16!important;color:#fff2d6}
+.cal-head{color:#f0d58f}.cal-grid b{color:#d8be8b}.cal-grid .day{color:#f8eedb;border-radius:50%}.cal-grid .selected{background:#b52639;color:white;box-shadow:0 0 0 1px #e2c276}
+.traditions-kz{background:radial-gradient(ellipse at center,#781c2c,#4b0e1b 72%,#29070f)!important}
+.traditions-kz:before,.traditions-kz:after{content:none!important}
+.traditions-kz .section-inner{background:rgba(45,7,16,.48);outline:0}
+.kz-customs article{padding-bottom:20px}
+.ritual-photo{object-fit:cover;object-position:center 28%}
+.kz-customs article:nth-child(2) .ritual-photo{object-position:center 25%}
+.banquet-note{margin:22px 0 0;padding:16px 18px;border-top:1px solid #d2a95c88;border-bottom:1px solid #d2a95c88;color:#f1e2c5;font:400 18px/1.55 "Cormorant Garamond",serif}
+.dress{background:radial-gradient(ellipse at center,#761c2b,#4b0e1b 70%,#29070f)!important;color:#fff6e6}
+.dress .lead{color:#f1e2c5}.dress .eyebrow{color:#f0d58f}.dress h2{color:#f4dda1}
+.dress-guidance article{background:#390b16cc;border-color:#d2a95c;color:#fff0d4}.dress-guidance p{color:#ead9c2}.dress-guidance span{color:#f0d58f}
+.swatch.red{background:#c51e32;color:#fff}.swatch.burg{background:#741329;color:#fff}
+.rsvp{background:radial-gradient(ellipse at center,#781c2c,#4b0e1b 70%,#29070f)!important;color:#fff6e6}
+.rsvp-card{background:linear-gradient(145deg,#3b0b17ee,#26070eef);border-color:#d2a95c;box-shadow:inset 0 0 0 8px #d2a95c12,0 28px 90px #16030977}
+.rsvp-card:before{border-color:#d2a95c66}.rsvp-title h2{color:#f4dda1}.rsvp-text{color:#f1e2c5}.rsvp-card .eyebrow{color:#f0d58f}
+.rsvp-card input,.rsvp-card select{color:#fff3dc;border-bottom-color:#d2a95c99}.rsvp-card option{color:#2a1015}.rsvp-card ::placeholder{color:#d7c3a6}
+.rsvp-card .btn,.rsvp-card .success h3{color:#f3d99b}.rsvp-card .success .lead{color:#f1e2c5}
+@media(max-width:850px){.cover-photos{grid-template-rows:clamp(240px,54vw,380px)}}
+@media(max-width:520px){.cover-photos{grid-template-columns:1fr 1fr;grid-template-rows:190px;gap:8px}.cover-title{font-size:clamp(58px,16vw,78px)}.countdown{gap:5px;padding:14px 8px}.count-num{font-size:34px}.count-label{font-size:7px;letter-spacing:.1em}}
+</style>
+</head>
+
+<body>
+<div class="progress" id="progress"></div>
+
+<div class="opener" id="opener" aria-label="Свадебное приглашение в конверте">
+  <div class="opener-content">
+    <div class="opener-kicker">Особенное приглашение для вас</div>
+    <div class="envelope-stage">
+      <div class="invitation-letter"><small>Приглашение на свадьбу</small><strong>Азиза<br>&amp; Леонид</strong><span>10 марта · Алматы</span></div>
+      <div class="envelope-back"></div><div class="envelope-front"></div><div class="envelope-flap"></div>
+      <button class="open-envelope" id="openInvitation" type="button" aria-label="Открыть свадебное приглашение"><span class="wax-seal">А&nbsp;&amp;&nbsp;Л</span><span>Открыть приглашение</span></button>
+    </div>
+    <div class="opener-ornament" aria-hidden="true">✦ ❧ ✦ ❧ ✦</div>
+  </div>
+</div>
+
+<nav class="topnav" aria-label="Навигация">
+  <a href="#cover">Приглашение</a><a href="#love">О нас</a><a href="#church">Венчание</a>
+  <a href="#banquet">Банкет</a><a href="#traditions">Традиции</a><a href="#dress">Дресс-код</a><a href="#rsvp">Ответ</a>
+</nav>
+
+<button class="music" id="musicBtn" aria-label="Включить музыку" title="Включить музыку">♪</button>
+<audio id="music" loop preload="none" src="assets/wedding-melody.wav"></audio>
+
+<!-- 1. COVER -->
+<section id="cover" class="screen cover">
+  <div class="decor"><div class="ornament o1"></div><div class="ornament o2"></div>
+    <i class="corner c1"></i><i class="corner c2"></i><i class="corner c3"></i><i class="corner c4"></i>
+  </div>
+  <div class="section-inner cover-layout">
+    <div class="cover-copy">
+      <div class="seal">А &amp; Л</div>
+      <div class="eyebrow">Приглашение на свадьбу</div>
+      <h1 class="serif cover-title">Азиза<br>&amp; Леонид</h1>
+      <div class="cover-date">10 марта · Алматы</div>
+      <p class="cover-note">С любовью приглашаем вас разделить с нами день, с которого начинается наша общая история.</p>
+      <a class="btn" href="#love"><span>Перейти к нашей истории</span></a>
+    </div>
+    <div class="cover-photos" aria-label="Фотографии Азизы и Леонида">
+      <img src="assets/childhood-aziza.jpg" alt="Азиза в детстве" fetchpriority="high">
+      <img src="assets/childhood-leonid-crop.jpg" alt="Леонид в детстве" fetchpriority="high">
+    </div>
+  </div>
+  <div class="scroll-cue">С любовью · 10 марта</div>
+</section>
+
+<!-- 2. LOVE -->
+<section id="love" class="screen love">
+  <div class="section-inner love-grid reveal">
+    <div class="love-copy">
+      <h2>Два сердца.<br><span class="gold">Одна семья.</span></h2>
+      <p class="quote">«Итак, остаются сии три: вера, надежда, любовь; но любовь из них больше.»</p>
+      <p class="lead">1 Коринфянам 13:13</p>
+      <div class="countdown" aria-label="Обратный отсчет">
+        <div class="count-item"><div class="count-num" id="days">—</div><div class="count-label">дней</div></div>
+        <div class="count-item"><div class="count-num" id="hours">—</div><div class="count-label">часов</div></div>
+        <div class="count-item"><div class="count-num" id="mins">—</div><div class="count-label">минут</div></div>
+        <div class="count-item"><div class="count-num" id="secs">—</div><div class="count-label">секунд</div></div>
+      </div>
+      <div class="calendar">
+        <div class="cal-head"><span>Март</span><span>2027</span></div>
+        <div class="cal-grid">
+          <b>ПН</b><b>ВТ</b><b>СР</b><b>ЧТ</b><b>ПТ</b><b>СБ</b><b>ВС</b>
+          <span class="day">1</span><span class="day">2</span><span class="day">3</span><span class="day">4</span><span class="day">5</span><span class="day">6</span><span class="day">7</span>
+          <span class="day">8</span><span class="day">9</span><span class="day selected">10</span><span class="day">11</span><span class="day">12</span><span class="day">13</span><span class="day">14</span>
+          <span class="day">15</span><span class="day">16</span><span class="day">17</span><span class="day">18</span><span class="day">19</span><span class="day">20</span><span class="day">21</span>
+          <span class="day">22</span><span class="day">23</span><span class="day">24</span><span class="day">25</span><span class="day">26</span><span class="day">27</span><span class="day">28</span>
+          <span class="day">29</span><span class="day">30</span><span class="day">31</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. CHURCH -->
+<section id="church" class="screen church">
+  <div class="church-aisle" aria-hidden="true"></div><div class="church-pews" aria-hidden="true"></div>
+  <div class="section-inner reveal">
+    <div class="chapel-flourish" aria-hidden="true">✦ &nbsp; ✧ &nbsp; ✦</div>
+    <div class="cross"></div>
+    <div class="eyebrow">Сначала — перед Богом</div>
+    <h2 class="section-title">Венчание</h2>
+    <div class="gold-line" style="margin:24px auto"></div>
+    <p class="lead" style="margin:auto">С особой благодарностью Богу мы приглашаем вас разделить с нами начало нашего семейного пути.</p>
+    <div class="church-name">Церковь «Сион»</div>
+    <div class="church-info">
+      <div class="info-block"><div class="info-label">Время</div><div class="info-value">14:00</div></div>
+      <div class="info-block"><div class="info-label">Город</div><div class="info-value">Алматы</div></div>
+      <div class="info-block"><div class="info-label">Дата</div><div class="info-value">10 марта</div></div>
+    </div>
+    <div class="chapel-flourish chapel-bottom" aria-hidden="true">✧ &nbsp; ♡ &nbsp; ✧</div>
+    <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Церковь%20Сион%20Алматы"><span>Показать на карте</span></a>
+  </div>
+</section>
+
+<!-- 4. BANQUET -->
+<section id="banquet" class="screen banquet">
+  <div class="section-inner banquet-grid">
+    <div class="restaurant-photo frame reveal">
+      <img src="https://cdn0.weddingwire.in/vendor/3990/3_2/1920/jpeg/whatsapp-image-2025-04-07-at-18-08-47-6_15_93990-175861050910764.jpeg" alt="Парадный внешний вид роскошного банкетного зала; иллюстративное фото, не фасад Novera Grand Hall" loading="lazy">
+    </div>
+    <div class="reveal">
+      <div class="eyebrow">После церемонии</div>
+      <h2>Праздничный<br><span class="gold">банкет</span></h2>
+      <p class="lead">Вас ждёт настоящее торжество: приглашённый шоу-балет, яркая весёлая программа, певцы, танцы и впечатляющий свадебный торт. Мы подготовим разнообразное меню с учётом ваших предпочтений: два горячих блюда, в том числе традиционный бешбармак с кониной, а также рыбные, мясные блюда и филе. Приходите голодными и участвуйте в конкурсах с большими призами!</p>
+      <div class="place-card">
+        <div class="info-label">Место проведения</div>
+        <div class="editable">Novera<br>Grand Hall</div>
+        <div class="venue-subtitle">Роскошный банкетный зал</div>
+        <div class="gold-line"></div>
+        <div class="info-label">Начало банкета</div>
+        <div class="info-value" style="font-family:'Cormorant Garamond';font-size:40px">18:00</div>
+        <div class="info-label" style="margin-top:18px">Адрес</div>
+        <div class="venue-address">ул. Ашимова, 32 · Алматы</div>
+        <p class="banquet-note">Просим не опаздывать к началу торжества: вечер начнётся с казахских традиций и вручения подарков родственниками и гостями.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KAZAKH TRADITIONS -->
+<section id="traditions" class="screen traditions-kz">
+  <div class="section-inner reveal">
+    <h2>Свадебные <span class="gold">обычаи</span></h2>
+    <div class="kz-customs">
+      <article><img class="ritual-photo" src="assets/betashar-reference.jpg" alt="Казахский обряд беташар" loading="lazy"><span>01 · ОБРЯД БЕТАШАР</span><h3>Знакомство с невестой</h3><p>Впервые гости увидят невесту во время беташара — торжественного открытия лица и знакомства с новой семьёй.</p></article>
+      <article><img class="ritual-photo" src="assets/kazakh-jewelry-collage.jpg" alt="Украшения и детали казахского свадебного наряда" loading="lazy"><span>02 · ПРОВОДЫ НЕВЕСТЫ</span><h3>Путь в новую семью</h3><p>Родные провожают невесту к жениху с добрыми напутствиями, сохраняя тепло родного дома.</p></article>
+      <article><img class="ritual-photo" src="assets/kazakh-family-ceremony.jpg" alt="Казахский свадебный обряд и встреча семей" loading="lazy"><span>03 · ВСТРЕЧА РОДНЫХ</span><h3>Знакомство семей</h3><p>Две семьи становятся одной. Старшие благословляют молодых и желают им согласия, благополучия и долгой любви.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 5. DRESS CODE -->
+<section id="dress" class="screen dress">
+  <div class="section-inner reveal">
+    <div class="eyebrow">Ваш образ</div>
+    <h2>Дресс-код</h2>
+    <p class="lead">Будем рады видеть вас в элегантных образах в оттенках шампанского, чёрного, коричневого, серебристого, бордового и красного.</p>
+    <div class="palette">
+      <div class="swatch champ">Шампань</div><div class="swatch black">Чёрный</div><div class="swatch brown">Коричневый</div>
+      <div class="swatch silver">Серебро</div><div class="swatch burg">Бордовый</div><div class="swatch red">Красный</div>
+    </div>
+    <div class="dress-guidance"><article><span>Для неё</span><p>Вечерние платья, благородные ткани, мягкое сияние и выразительные украшения.</p></article><article><span>Для него</span><p>Классический костюм, смокинг или элегантный образ в выбранной палитре.</p></article></div>
+  </div>
+</section>
+
+<!-- RSVP -->
+<section id="rsvp" class="screen rsvp">
+  <div class="section-inner">
+    <div class="rsvp-card">
+      <div id="rsvpFormWrap">
+        <div class="rsvp-title">
+          <div class="eyebrow">Очень ждём вашего ответа</div>
+          <h2 style="font-size:clamp(48px,6vw,75px)">Будете ли вы <span class="gold">с нами?</span></h2>
+        </div>
+        <p class="rsvp-text">Для нас этот день особенно важен, и мы будем счастливы разделить его с вами. Пожалуйста, подтвердите своё присутствие заранее: для каждого гостя мы персонально бронируем место и составляем меню, поэтому нам важно знать точное число гостей.</p>
+        <form id="rsvpForm">
+          <div class="form-grid">
+            <input required name="name" autocomplete="name" placeholder="Ваше имя и фамилия">
+            <select required name="attendance"><option value="" disabled selected>Ваш ответ</option><option>Буду</option><option>Не смогу присутствовать</option></select>
+            <div class="full" style="text-align:center"><button class="btn" type="submit"><span>Подтвердить присутствие</span></button></div>
+          </div>
+        </form>
+      </div>
+      <div class="success" id="rsvpSuccess">
+        <div class="seal">А &amp; Л</div>
+        <h3>Спасибо!</h3>
+        <p class="lead" style="margin:auto">Мы получили ваш ответ и будем ждать встречи с вами.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>Азиза &amp; Леонид · 10 марта · Алматы</footer>
+
+<script>
+/* =========================================================
+   НАСТРОЙКИ СВАДЬБЫ — ИЗМЕНЯЙТЕ ЗДЕСЬ
+   ========================================================= */
+const WEDDING_DATE = "2027-03-10T14:00:00+05:00";
+// Если год другой — поменяйте только год выше.
+// Банкет, имена, фото и тексты находятся в HTML и легко редактируются.
+
+/* Countdown */
+function updateCountdown(){
+  const target = new Date(WEDDING_DATE).getTime();
+  const now = Date.now();
+  let diff = Math.max(0, target-now);
+  const d = Math.floor(diff/86400000); diff%=86400000;
+  const h = Math.floor(diff/3600000); diff%=3600000;
+  const m = Math.floor(diff/60000); diff%=60000;
+  const s = Math.floor(diff/1000);
+  document.getElementById("days").textContent=d;
+  document.getElementById("hours").textContent=String(h).padStart(2,"0");
+  document.getElementById("mins").textContent=String(m).padStart(2,"0");
+  document.getElementById("secs").textContent=String(s).padStart(2,"0");
+}
+updateCountdown(); setInterval(updateCountdown,1000);
+
+/* Scroll progress */
+window.addEventListener("scroll",()=>{
+  const max=document.documentElement.scrollHeight-window.innerHeight;
+  document.getElementById("progress").style.width=(window.scrollY/max*100)+"%";
+},{passive:true});
+
+/* Reveal animation */
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")});
+},{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+
+/* Opening invitation — begins only after the guest taps the seal */
+document.getElementById("openInvitation").addEventListener("click",()=>{
+  const opener=document.getElementById("opener");
+  opener.classList.add("opening");
+  window.setTimeout(()=>opener.remove(),900);
+});
+
+/* Music: never autoplay */
+const music=document.getElementById("music"), musicBtn=document.getElementById("musicBtn");
+musicBtn.addEventListener("click",async()=>{
+  if(music.paused){
+    try{await music.play();musicBtn.classList.add("playing");musicBtn.textContent="Ⅱ";musicBtn.setAttribute("aria-label","Остановить музыку");musicBtn.title="Остановить музыку";}
+    catch(err){alert("Не удалось открыть мелодию. Проверьте файл assets/wedding-melody.wav.");}
+  }else{
+    music.pause();musicBtn.classList.remove("playing");musicBtn.textContent="♪";musicBtn.setAttribute("aria-label","Включить музыку");musicBtn.title="Включить музыку";
+  }
+});
+
+/* RSVP demo — stored in this browser */
+document.getElementById("rsvpForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  const data=Object.fromEntries(new FormData(e.target).entries());
+  const responses=JSON.parse(localStorage.getItem("wedding_rsvp")||"[]");
+  responses.push({...data,date:new Date().toISOString()});
+  localStorage.setItem("wedding_rsvp",JSON.stringify(responses));
+  document.getElementById("rsvpFormWrap").style.display="none";
+  document.getElementById("rsvpSuccess").classList.add("show");
+});
+
+/* Smooth navigation on old browsers */
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener("click",e=>{
+    const el=document.querySelector(a.getAttribute("href"));
+    if(el){e.preventDefault();el.scrollIntoView({behavior:"smooth"})}
+  });
+});
+</script>
+</body>
+</html>
