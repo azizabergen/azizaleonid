@@ -569,6 +569,20 @@ body.invitation-opened .cover-photos img:nth-child(2){animation-delay:.2s}
 .cover-bible-quote small{display:block;margin-top:8px;color:#e9cc88;text-transform:uppercase;letter-spacing:.16em;font:500 9px/1.3 Montserrat,sans-serif}
 .calendar-label{margin:26px auto 10px;text-align:center;color:#8e6c34;text-transform:uppercase;letter-spacing:.2em;font:500 10px/1.4 Montserrat,sans-serif}
 </style>
+<style>
+/* Portrait rectangular title-page frame */
+.cover .section-inner.cover-layout{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;width:min(100%,560px)!important;min-height:min(860px,calc(100svh - 112px));gap:clamp(14px,2.4vh,24px)!important;padding:clamp(22px,4.5vh,42px) clamp(18px,5vw,36px)!important;border:1px solid #b28a42;outline:1px solid #b28a4238;outline-offset:6px;text-align:center!important}
+.cover-photos.paired-childhood{width:min(100%,390px);max-height:none!important;border-radius:0!important;flex:none}
+.cover-photos.paired-childhood img{border-radius:0!important}
+@media(max-width:700px){.cover .section-inner.cover-layout{width:calc(100% - 20px)!important;min-height:calc(100svh - 118px);padding:20px 16px!important;gap:14px!important}.cover-photos.paired-childhood{width:min(100%,350px)}}
+/* Taller mobile sections for Telegram's in-app browser */
+@media(max-width:700px){
+  .screen{min-height:max(116svh,780px);padding-top:clamp(105px,14svh,132px);padding-bottom:clamp(82px,12svh,112px)}
+  .cover{min-height:max(136svh,920px);padding-top:106px;padding-bottom:90px}
+  .cover .section-inner.cover-layout{min-height:max(122svh,820px);gap:clamp(18px,3vh,30px)!important;padding-top:clamp(30px,6vh,54px)!important;padding-bottom:clamp(30px,6vh,54px)!important}
+  .love .section-inner,.church .section-inner,.banquet .section-inner,.traditions-kz .section-inner,.dress .section-inner,.rsvp .section-inner{width:100%}
+}
+</style>
 </head>
 
 <body class="invitation-locked">
