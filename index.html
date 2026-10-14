@@ -587,8 +587,14 @@ body.invitation-opened .cover-photos img:nth-child(2){animation-delay:.2s}
 }
 .cover-photo-page .cover-photo-inner{display:flex;flex-direction:column;align-items:center;justify-content:center;width:min(100%,600px);min-height:max(116svh,820px);gap:28px;padding:38px 28px;border:1px solid #b28a42;outline:1px solid #b28a4238;outline-offset:6px}
 .cover-photo-page .cover-photos.paired-childhood{width:min(82vw,420px)}
-.cover-title .leonid-name,.cover-title .aziza-name{font-family:"Great Vibes","Cormorant Garamond",cursive;font-size:1em;font-weight:400;font-style:normal;letter-spacing:0;line-height:inherit}
-.cover-title .aziza-initial{display:inline;font-family:"Great Vibes","Cormorant Garamond",cursive;font-size:1em;font-weight:400;line-height:inherit;color:inherit;vertical-align:baseline;text-shadow:inherit}
+.cover .section-inner.cover-layout{min-height:0!important;padding:0!important;border:0!important;outline:0!important;gap:0!important}
+.cover .cover-copy{width:100%;padding:clamp(26px,5vh,48px) clamp(18px,5vw,38px)!important;border:1px solid #b28a42;outline:1px solid #b28a4238;outline-offset:6px}
+.cover-title .leonid-name,.cover-title .aziza-name{font-family:"Great Vibes","Cormorant Garamond",cursive!important;font-size:1em;font-weight:400;font-style:normal;letter-spacing:0;line-height:inherit;color:#d6ad61!important;text-shadow:0 3px 16px #e7c77c44}
+.cover-title .aziza-initial{display:inline;font-family:Georgia,"Times New Roman",serif!important;font-size:1em!important;font-style:normal!important;font-weight:400!important;line-height:inherit!important;color:#d6ad61!important;vertical-align:baseline!important;text-shadow:none!important}
+.cover-title .leonid-initial{display:inline;font-family:Georgia,"Times New Roman",serif!important;font-size:1em!important;font-style:normal!important;font-weight:400!important;line-height:inherit!important;color:#d6ad61!important;vertical-align:baseline!important;text-shadow:none!important}
+.cover{flex-direction:column;justify-content:center}
+.cover-cta-below{position:relative;z-index:2;margin:14px auto 0;flex:none}
+@media(max-width:700px){.cover .section-inner.cover-layout{width:calc(100% - 44px)!important;min-height:0!important;padding:0!important}.cover .cover-copy{padding:clamp(24px,6vw,36px) 18px!important}.cover-cta-below{margin-top:14px}}
 </style>
 </head>
 
@@ -620,11 +626,11 @@ body.invitation-opened .cover-photos img:nth-child(2){animation-delay:.2s}
   </div>
   <div class="section-inner cover-layout">
     <div class="cover-copy">
-      <h1 class="serif cover-title"><span class="leonid-name">Леонид</span> <span class="cover-amp">&amp;</span><br><span class="aziza-name"><span class="aziza-initial">А</span>зиза</span></h1>
+      <h1 class="serif cover-title"><span class="leonid-name"><span class="leonid-initial">Л</span>еонид</span><br><span class="cover-amp">&amp;</span><br><span class="aziza-name"><span class="aziza-initial">А</span>зиза</span></h1>
       <p class="cover-note">Приглашаем разделить с нами важное событие в нашей жизни — нашу свадьбу.</p>
-      <a class="btn" href="#cover-photo"><span>Приглашение</span></a>
     </div>
   </div>
+  <a class="btn cover-cta-below" href="#cover-photo"><span>Приглашение</span></a>
 </section>
 
 <!-- 2. COVER PHOTO -->
