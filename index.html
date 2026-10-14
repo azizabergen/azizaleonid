@@ -559,6 +559,16 @@ body.invitation-opened .cover-photos img:nth-child(2){animation-delay:.2s}
 .paired-childhood.cover-photos img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 48%;transform:none!important;border:3px solid #f8f0df!important}
 @media(max-width:700px){.paired-childhood.cover-photos{aspect-ratio:4/5;max-height:390px}.paired-childhood.cover-photos img{object-position:center 48%}}
 </style>
+<style>
+.restaurant-photo img{object-position:center top!important}
+.restaurant-photo{height:auto!important;aspect-ratio:326/244;min-height:0!important;max-height:none!important;background:#f5efe4}
+.restaurant-photo img{width:100%;height:100%;object-fit:contain!important;object-position:center!important}
+.paired-childhood.cover-photos{display:flex!important;flex-direction:column;gap:0;aspect-ratio:auto;max-height:none;height:auto;overflow:hidden}
+.paired-childhood.cover-photos img{width:100%;height:auto;aspect-ratio:4/5;flex:none;object-fit:cover}
+.cover-bible-quote{position:static;z-index:auto;padding:17px 14px 14px;border:1px solid #d5b66a88;border-top:0;background:linear-gradient(145deg,#3a0712,#310711);color:#fff4dc;text-align:center;text-shadow:0 2px 8px #170308;font:italic 500 clamp(17px,2.3vw,23px)/1.3 "Bodoni Moda","Cormorant Garamond",serif}
+.cover-bible-quote small{display:block;margin-top:8px;color:#e9cc88;text-transform:uppercase;letter-spacing:.16em;font:500 9px/1.3 Montserrat,sans-serif}
+.calendar-label{margin:26px auto 10px;text-align:center;color:#8e6c34;text-transform:uppercase;letter-spacing:.2em;font:500 10px/1.4 Montserrat,sans-serif}
+</style>
 </head>
 
 <body class="invitation-locked">
@@ -566,13 +576,11 @@ body.invitation-opened .cover-photos img:nth-child(2){animation-delay:.2s}
 
 <div class="opener" id="opener" aria-label="Свадебное приглашение в конверте">
   <div class="opener-content">
-    <div class="opener-kicker">Приглашаем на нашу свадьбу</div>
     <div class="envelope-stage">
-      <div class="invitation-letter"><small>18 ноября</small><strong>Леонид<br>&amp; Азиза</strong></div>
+      <div class="invitation-letter" aria-hidden="true"></div>
       <div class="envelope-back"></div><div class="envelope-front"></div><div class="envelope-flap"></div>
       <button class="open-envelope" id="openInvitation" type="button" aria-label="Открыть приглашение"><span class="wax-seal" aria-hidden="true"></span></button>
     </div>
-    <div class="opener-ornament" aria-hidden="true">✦ ❧ ✦ ❧ ✦</div>
   </div>
 </div>
 
@@ -591,14 +599,14 @@ body.invitation-opened .cover-photos img:nth-child(2){animation-delay:.2s}
   </div>
   <div class="section-inner cover-layout">
     <div class="cover-copy">
-      <div class="eyebrow">Приглашаем на нашу свадьбу</div>
       <h1 class="serif cover-title">Леонид <span class="cover-amp">&amp;</span><br><span class="aziza-name"><span class="aziza-initial">А</span>зиза</span></h1>
       <div class="cover-date">18 ноября</div>
-      <p class="cover-note">Приглашаем на нашу свадьбу</p>
+      <p class="cover-note">Приглашаем разделить с нами важное событие в нашей жизни — нашу свадьбу.</p>
       <a class="btn" href="#love"><span>Приглашение</span></a>
     </div>
     <div class="cover-photos paired-childhood" aria-label="Леонид и Азиза в детстве вместе на лугу">
       <img src="assets/childhood-together.png" alt="Леонид и Азиза в детстве вместе на лугу" fetchpriority="high">
+      <div class="cover-bible-quote"><span>«Итак, остаются сии три: вера, надежда, любовь; но любовь из них больше.»</span><small>1 Коринфянам 13:13</small></div>
     </div>
   </div>
   <div class="scroll-cue">С любовью · 18 ноября</div>
@@ -609,8 +617,7 @@ body.invitation-opened .cover-photos img:nth-child(2){animation-delay:.2s}
   <div class="section-inner love-grid reveal">
     <div class="love-copy">
       <h2>Два сердца.<br><span class="gold">Одна семья.</span></h2>
-      <p class="quote">«Итак, остаются сии три: вера, надежда, любовь; но любовь из них больше.»</p>
-      <p class="lead">1 Коринфянам 13:13</p>
+      <div class="calendar-label">Дата свадьбы</div>
       <div class="countdown" aria-label="Обратный отсчет">
         <div class="count-item"><div class="count-num" id="days">—</div><div class="count-label">дней</div></div>
         <div class="count-item"><div class="count-num" id="hours">—</div><div class="count-label">часов</div></div>
@@ -664,7 +671,7 @@ body.invitation-opened .cover-photos img:nth-child(2){animation-delay:.2s}
       <div class="eyebrow">После церемонии</div>
       <h2>Праздничный<br><span class="gold">банкет</span></h2>
       <div class="prize-strip"><img src="assets/toybastar-gifts.jpg" alt="Подарки для участников конкурсов" loading="lazy"><span>Участвуйте в конкурсах — вас ждут призы</span></div>
-      <p class="lead">Вас ждёт настоящее торжество: кавказский шоу-балет, казахский ансамбль, яркая праздничная программа, певцы, танцы, эффектный свадебный торт и первый вальс. Мы подготовим разнообразное меню: два горячих блюда, одно из них — традиционный бешбармак с кониной. Приходите голодными и участвуйте в конкурсах с большими призами!</p>
+      <p class="lead">Вас ждёт настоящее торжество: кавказский шоу-балет, казахский ансамбль, яркая праздничная программа, певцы, танцы, эффектный свадебный торт и первый вальс. Мы подготовим разнообразное меню: два горячих блюда, одно из которых — традиционный бешбармак с кониной. Приходите голодными и участвуйте в конкурсах с большими призами!</p>
       <div class="place-card">
         <div class="info-label">Место проведения</div>
         <div class="editable">Коркем</div>
@@ -674,8 +681,8 @@ body.invitation-opened .cover-photos img:nth-child(2){animation-delay:.2s}
         <div class="info-value" style="font-family:'Cormorant Garamond';font-size:40px">18:00</div>
         <div class="info-label" style="margin-top:18px">Адрес</div>
         <div class="venue-address">мкр. Жетысу-1, 9А · Алматы</div>
-        <p class="banquet-note">Для вашего удобства банкет пройдёт в удобной локации внутри города. Адрес и маршрут — ниже.</p>
-        <p class="banquet-note">Просим не опаздывать: торжество начнётся с казахских традиций и вручения подарков родственниками и гостями. Вас встретят под звуки карная и сурная.</p>
+        <p class="banquet-note">Банкетный зал находится в центре города. Адрес и маршрут — ниже.</p>
+        <p class="banquet-note">Просим не опаздывать: начало вечера будет посвящено казахским традициям и вручению подарков родственниками и гостями. Вас встретят под звуки карнаев и сурнаев.</p>
         <a class="venue-map" target="_blank" rel="noopener" href="https://2gis.kz/almaty/firm/9429940000855513">Открыть зал в 2ГИС ↗</a>
       </div>
     </div>
@@ -699,7 +706,7 @@ body.invitation-opened .cover-photos img:nth-child(2){animation-delay:.2s}
   <div class="section-inner reveal">
     <div class="eyebrow">Ваш образ</div>
     <h2>Дресс-код</h2>
-    <p class="lead">Вы можете выбрать любой вечерний образ. Особенно приветствуются чёрный, бордовый, глубокие насыщенные оттенки, серебро и золото. Просим избегать белого и пастельных тонов, чтобы ваш наряд красиво выделялся на фоне светлого зала.</p>
+    <p class="lead">Вы можете выбрать любой вечерний образ. Приветствуются насыщенные оттенки: чёрный, бордовый, а также серебряные и золотые акценты. Просим избегать белого и пастельных тонов, чтобы ваш наряд красиво выделялся на фоне светлого зала.</p>
     <div class="palette">
       <div class="swatch champ">Тёплый шампань</div><div class="swatch black">Чёрный</div>
       <div class="swatch burg">Бордовый</div><div class="swatch silver">Серебро</div><div class="swatch gold-swatch">Золото</div>
@@ -717,19 +724,20 @@ body.invitation-opened .cover-photos img:nth-child(2){animation-delay:.2s}
           <div class="eyebrow">Очень ждём вашего ответа</div>
           <h2 style="font-size:clamp(48px,6vw,75px)">Будете ли вы <span class="gold">с нами?</span></h2>
         </div>
-        <p class="rsvp-text"><strong>Главный подарок — ваше присутствие.</strong> Пожалуйста, подтвердите его заранее: для каждого гостя мы персонально бронируем место и составляем меню.</p>
+        <p class="rsvp-text"><strong>Главный подарок — ваше присутствие.</strong> Пожалуйста, подтвердите его заранее: мы бронируем для каждого гостя место и готовим меню. После заполнения откроется Telegram с готовым сообщением — нажмите «Отправить».</p>
         <form id="rsvpForm">
           <div class="form-grid">
             <input required name="name" autocomplete="name" placeholder="Ваше имя и фамилия">
             <select required name="attendance"><option value="" disabled selected>Ваш ответ</option><option>Буду</option><option>Не смогу присутствовать</option></select>
-            <div class="full" style="text-align:center"><button class="btn" type="submit"><span>Подтвердить присутствие</span></button></div>
+            <div class="full" style="text-align:center"><button class="btn" type="submit"><span>Ответить в Telegram</span></button></div>
           </div>
         </form>
       </div>
       <div class="success" id="rsvpSuccess">
         <div class="seal">Л &amp; А</div>
-        <h3>Спасибо!</h3>
-        <p class="lead" style="margin:auto">Мы получили ваш ответ и будем ждать встречи с вами.</p>
+        <h3>Ответ подготовлен</h3>
+        <p class="lead" style="margin:auto">Остался последний шаг: нажмите «Отправить» в Telegram.</p>
+        <a class="btn telegram-rsvp-link" id="telegramRsvpLink" href="https://t.me/azizabergen" target="_blank" rel="noopener noreferrer"><span>Открыть Telegram</span></a>
       </div>
     </div>
   </div>
@@ -786,21 +794,22 @@ const music=document.getElementById("music"), musicBtn=document.getElementById("
 musicBtn.addEventListener("click",async()=>{
   if(music.paused){
     try{await music.play();musicBtn.classList.add("playing");musicBtn.textContent="Ⅱ";musicBtn.setAttribute("aria-label","Остановить музыку");musicBtn.title="Остановить музыку";}
-    catch(err){alert("Не удалось открыть мелодию. Проверьте файл assets/wedding-melody.wav.");}
+    catch(err){alert("Не удалось включить музыку. Попробуйте ещё раз.");}
   }else{
     music.pause();musicBtn.classList.remove("playing");musicBtn.textContent="♪";musicBtn.setAttribute("aria-label","Включить музыку");musicBtn.title="Включить музыку";
   }
 });
 
-/* RSVP demo — stored in this browser */
+/* Send the guest's prepared RSVP to the couple in Telegram. */
 document.getElementById("rsvpForm").addEventListener("submit",e=>{
   e.preventDefault();
   const data=Object.fromEntries(new FormData(e.target).entries());
-  const responses=JSON.parse(localStorage.getItem("wedding_rsvp")||"[]");
-  responses.push({...data,date:new Date().toISOString()});
-  localStorage.setItem("wedding_rsvp",JSON.stringify(responses));
+  const message=`Ответ на приглашение Леонида и Азизы на свадьбу 18 ноября.\nИмя: ${data.name}\nОтвет: ${data.attendance}`;
+  const telegramLink=document.getElementById("telegramRsvpLink");
+  telegramLink.href=`https://t.me/azizabergen?text=${encodeURIComponent(message)}`;
   document.getElementById("rsvpFormWrap").style.display="none";
   document.getElementById("rsvpSuccess").classList.add("show");
+  window.open(telegramLink.href,"_blank","noopener,noreferrer");
 });
 
 /* Smooth navigation on old browsers */
