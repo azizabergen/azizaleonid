@@ -580,8 +580,15 @@ body.invitation-opened .cover-photos img:nth-child(2){animation-delay:.2s}
   .screen{min-height:max(116svh,780px);padding-top:clamp(105px,14svh,132px);padding-bottom:clamp(82px,12svh,112px)}
   .cover{min-height:max(136svh,920px);padding-top:106px;padding-bottom:90px}
   .cover .section-inner.cover-layout{min-height:max(122svh,820px);gap:clamp(18px,3vh,30px)!important;padding-top:clamp(30px,6vh,54px)!important;padding-bottom:clamp(30px,6vh,54px)!important}
+  .cover-photo-page{min-height:max(116svh,780px)}
+  .cover-photo-page .cover-photo-inner{min-height:max(108svh,740px);padding:28px 18px;gap:22px}
+  .cover-photo-page .cover-photos.paired-childhood{width:min(82vw,390px)}
   .love .section-inner,.church .section-inner,.banquet .section-inner,.traditions-kz .section-inner,.dress .section-inner,.rsvp .section-inner{width:100%}
 }
+.cover-photo-page .cover-photo-inner{display:flex;flex-direction:column;align-items:center;justify-content:center;width:min(100%,600px);min-height:max(116svh,820px);gap:28px;padding:38px 28px;border:1px solid #b28a42;outline:1px solid #b28a4238;outline-offset:6px}
+.cover-photo-page .cover-photos.paired-childhood{width:min(82vw,420px)}
+.cover-title .leonid-name,.cover-title .aziza-name{font-family:"Great Vibes","Cormorant Garamond",cursive;font-size:1em;font-weight:400;font-style:normal;letter-spacing:0;line-height:inherit}
+.cover-title .aziza-initial{display:inline;font-family:"Great Vibes","Cormorant Garamond",cursive;font-size:1em;font-weight:400;line-height:inherit;color:inherit;vertical-align:baseline;text-shadow:inherit}
 </style>
 </head>
 
@@ -613,20 +620,28 @@ body.invitation-opened .cover-photos img:nth-child(2){animation-delay:.2s}
   </div>
   <div class="section-inner cover-layout">
     <div class="cover-copy">
-      <h1 class="serif cover-title">Леонид <span class="cover-amp">&amp;</span><br><span class="aziza-name"><span class="aziza-initial">А</span>зиза</span></h1>
-      <div class="cover-date">18 ноября</div>
+      <h1 class="serif cover-title"><span class="leonid-name">Леонид</span> <span class="cover-amp">&amp;</span><br><span class="aziza-name"><span class="aziza-initial">А</span>зиза</span></h1>
       <p class="cover-note">Приглашаем разделить с нами важное событие в нашей жизни — нашу свадьбу.</p>
-      <a class="btn" href="#love"><span>Приглашение</span></a>
-    </div>
-    <div class="cover-photos paired-childhood" aria-label="Леонид и Азиза в детстве вместе на лугу">
-      <img src="assets/childhood-together.png" alt="Леонид и Азиза в детстве вместе на лугу" fetchpriority="high">
-      <div class="cover-bible-quote"><span>«Итак, остаются сии три: вера, надежда, любовь; но любовь из них больше.»</span><small>1 Коринфянам 13:13</small></div>
+      <a class="btn" href="#cover-photo"><span>Приглашение</span></a>
     </div>
   </div>
-  <div class="scroll-cue">С любовью · 18 ноября</div>
 </section>
 
-<!-- 2. LOVE -->
+<!-- 2. COVER PHOTO -->
+<section id="cover-photo" class="screen cover cover-photo-page">
+  <div class="decor"><div class="ornament o1"></div><div class="ornament o2"></div>
+    <i class="corner c1"></i><i class="corner c2"></i><i class="corner c3"></i><i class="corner c4"></i>
+  </div>
+  <div class="section-inner cover-photo-inner reveal">
+    <div class="cover-photos paired-childhood" aria-label="Леонид и Азиза в детстве вместе на лугу">
+      <img src="assets/childhood-together.png" alt="Леонид и Азиза в детстве вместе на лугу" loading="eager">
+      <div class="cover-bible-quote"><span>«Итак, остаются сии три: вера, надежда, любовь; но любовь из них больше.»</span><small>1 Коринфянам 13:13</small></div>
+    </div>
+    <a class="btn" href="#love"><span>Продолжить</span></a>
+  </div>
+</section>
+
+<!-- 3. LOVE -->
 <section id="love" class="screen love">
   <div class="section-inner love-grid reveal">
     <div class="love-copy">
